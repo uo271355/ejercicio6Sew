@@ -1,0 +1,102 @@
+<!DOCTYPE  html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora RPN</title>
+<link rel="stylesheet" href="CalculadoraCalorias.css">
+<script src="CalculadoraCalorias.js"></script>
+</head>
+<body>
+<h2>Calcula tu IMC</h2>
+<p><label for="peso">Peso en Kg: <input type="text" id="peso"></label></p>
+<p><label for="altura">Altura en metros: <input type="text" id="altura"></label></p>
+<p><label for="result">Resultado: <input type="text" id="result" disabled=""></label></p>
+<button  value="calcular" id="calcular" onclick="calculadoraA.IMC()">Calcular</button>
+
+<section class="row">
+<h2>Calculadora de calorias</h2>
+<section class="column">
+<h3>Calorias de los Alimentos</h3>
+<label for="alimentos">Alimentos</label>
+<input type="text" id="alimentos" disabled="">
+<br>
+<button  class="calculo" onclick="calculadoraA.calculaA()">Calcula</button>
+<button   class="calculo" onclick="calculadoraA.elimina()">Elimina Alimento</button>
+<button  class="calculo"  onclick="calculadoraA.borrar()">Borrar</button>
+<br>
+<button onclick="calculadoraA.caloriasAlimentos('a')">Aceitunas</button>
+<button onclick="calculadoraA.caloriasAlimentos('b')">Berenjena</button>
+<button onclick="calculadoraA.caloriasAlimentos('p')">Pimiento</button>
+<button onclick="calculadoraA.caloriasAlimentos('r')">Remolacha</button>
+<br>
+<button onclick="calculadoraA.caloriasAlimentos('c')">Ciruelas</button>
+<button onclick="calculadoraA.caloriasAlimentos('o')">Coco</button>
+<button onclick="calculadoraA.caloriasAlimentos('m')">Mandarina</button>
+<button onclick="calculadoraA.caloriasAlimentos('l')">Platano</button>
+<br>
+<button onclick="calculadoraA.caloriasAlimentos('n')">Nueces</button>
+<button onclick="calculadoraA.caloriasAlimentos('i')">Pistachos</button>
+<button onclick="calculadoraA.caloriasAlimentos('e')">Almendras</button>
+<button onclick="calculadoraA.caloriasAlimentos('t')">Castañas</button>
+<br>
+<button onclick="calculadoraA.caloriasAlimentos('x')">Bacon</button>
+<button onclick="calculadoraA.caloriasAlimentos('h')">Chorizo</button>
+<button onclick="calculadoraA.caloriasAlimentos('y')">Pollo</button>
+<button onclick="calculadoraA.caloriasAlimentos('w')">Ternera</button>
+<br>
+<button onclick="calculadoraA.caloriasAlimentos('f')">Lubina</button>
+<button onclick="calculadoraA.caloriasAlimentos('v')">Anchoas</button>
+<button onclick="calculadoraA.caloriasAlimentos('z')">Salmon</button>
+<button onclick="calculadoraA.caloriasAlimentos('u')">Pulpo</button>
+</section>
+<section class="column">
+<h3>Calorias gastadas con actividades</h3>
+<label for="deporte">Actividades</label>
+<input type="text" id="deporte" disabled="">
+<br>
+<button   class="calculo" onclick="calculadoraD.calculaD()">Calcula</button>
+<button   class="calculo" onclick="calculadoraD.eliminaD()">Elimina Alimento</button>
+<button  class="calculo"  onclick="calculadoraD.borrarD()">Borrar</button>
+<br>
+<button onclick="calculadoraD.caloriasDeporte('n')">Nadar</button>
+<button onclick="calculadoraD.caloriasDeporte('y')">Yoga</button>
+<button onclick="calculadoraD.caloriasDeporte('a')">Aerobic</button>
+<button onclick="calculadoraD.caloriasDeporte('c')">Calistenia</button>
+<br>
+<button onclick="calculadoraD.caloriasDeporte('e')">Eliptica</button>
+<button onclick="calculadoraD.caloriasDeporte('q')">Equitacion</button>
+<button onclick="calculadoraD.caloriasDeporte('n')">Badminton</button>
+<button onclick="calculadoraD.caloriasDeporte('t')">Atletismo</button>
+<br>
+<button onclick="calculadoraD.caloriasDeporte('f')">Futbol</button>
+<button onclick="calculadoraD.caloriasDeporte('i')">Ciclismo</button>
+<button onclick="calculadoraD.caloriasDeporte('x')">Boxear</button>
+<button onclick="calculadoraD.caloriasDeporte('k')">Karate</button>
+<br>
+<button onclick="calculadoraD.caloriasDeporte('l')">Balonmano</button>
+<button onclick="calculadoraD.caloriasDeporte('v')">Volleyball</button>
+<button onclick="calculadoraD.caloriasDeporte('z')">Billar</button>
+<button onclick="calculadoraD.caloriasDeporte('r')">Rafting</button>
+<br>
+<button onclick="calculadoraD.caloriasDeporte('g')">Esgrima</button>
+<button onclick="calculadoraD.caloriasDeporte('v')">Kayak</button>
+<button onclick="calculadoraD.caloriasDeporte('w')">Watervoley</button>
+<button onclick="calculadoraD.caloriasDeporte('p')">Patinaje</button>
+<br>
+</section>
+</section>
+<h3>Calorias restantes</h3>
+<p><label for="totalAlimentos">Calorias total alimentos: <input type="text" id="totalAlimentos" disabled=""></label></p>
+<p><label for="totalDeportes">Calorias total deportes: <input type="text" id="totalDeportes" disabled=""></label></p>
+<p><label for="total">Calorias restantes: <input type="text" id="total" disabled=""></label></p>
+<button  value="Total" id="c" onclick="calculadoraA.total()">Total</button>
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us">
+<img src="valid-html5-button.png" alt="¡HTML5 valido!" height="31" width="88">
+</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Valido!">
+</a>
+</footer>
+</body>
+</html>

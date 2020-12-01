@@ -1,0 +1,36 @@
+.column {
+  float: left;
+  width: 45%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#alimentos{
+	width:490px;
+	height:30px;
+}
+#deporte{
+	width:470px;
+	height:30px;
+}
+button{
+	width:120px;
+	height:40px;
+	color:black;
+	background-color:#C0C5FC;
+}
+#calcular{
+	color:black;
+	background-color:#F7CF64;
+}
+.calculo{
+	color:black;
+	background-color:#DEC0FC;
+}
+#c{
+	color:black;
+	background-color:#F7CF64;
+}
